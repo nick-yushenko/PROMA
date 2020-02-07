@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <title>PROMA</title>
+</head>
+
+<body>
+  <div class="modal thanks">
+    <div class="modal-content">
+      <div class="modal-close thanks-close"><span></span><span></span></div>
+      <h2 class="modal-title">Спасибо за заявку!</h2>
+      <p class="modal-text">Наши специалисты свяжутся с Вами в ближайшее время</p>
+    </div>
+  </div>
+  <div class="modal error">
+    <div class="modal-content">
+      <div class="modal-close error-close"><span></span><span></span></div>
+      <h2 class="modal-title">Упс...</h2>
+      <p class="modal-text">Наши специалисты уже исправляют ошибку! Попробуйте повторить попытку позже</p>
+    </div>
+  </div>
+  <div class="modal policy-modal">
+    <div class="modal-content">
+      <div class="modal-close policy-close"><span></span><span></span></div>
+      <h2 class="modal-title">Полититка обработки персональных данных</h2>
+      <p class="modal-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, tenetur.</p>
+      <ul class="modal-ul">
+        <li class="modal-li">Lorem ipsum dolor sit.</li>
+        <p class="modal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, enim quod eveniet
+          doloremque perspiciatis rerum ratione soluta quae fugiat sed aliquid voluptas dignissimos esse explicabo
+          nesciunt. Nostrum, eum cupiditate quas molestiae consequuntur blanditiis nam reiciendis, pariatur minus
+          eveniet voluptatibus facere beatae sit suscipit enim culpa debitis ea! Quia alias reiciendis possimus
+          expedita! Delectus quaerat placeat nisi optio ipsa eaque quasi modi, sint, illum nihil ipsum reiciendis odit
+          dolores commodi. Corporis consectetur impedit amet in, veniam, accusantium adipisci inventore repellat est
+          repellendus quibusdam quasi deserunt provident doloribus iure quae! Facere ut eaque voluptatem quia, earum
+          quibusdam aliquam ipsum adipisci distinctio tempore.</p>
+        <li class="modal-li">Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          debitis, autem doloremque ea obcaecati, unde asperiores ratione pariatur, accusamus eligendi omnis fugit
+          laboriosam praesentium nesciunt expedita possimus quidem aperiam impedit. Sint officia aliquid voluptates
+          fugiat quia dolore quaerat magni aspernatur quasi, nobis tempore? Suscipit perspiciatis facilis odit
+          laudantium. Soluta, illo minus quas magni culpa deserunt? Doloribus debitis, magnam quia optio adipisci
+          aliquid non earum distinctio nostrum asperiores dolore fugit? Hic dignissimos natus placeat ad aut commodi
+          corrupti accusamus minus, beatae cum expedita qui inventore quaerat veritatis eum reiciendis rem
+          reprehenderit! Obcaecati maiores ab placeat fugiat maxime eum soluta voluptates quas.</li>
+        <li class="modal-li">Lorem ipsum dolor sit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Voluptatibus laboriosam iure delectus odio, quo voluptas, sit excepturi ab blanditiis maxime voluptates
+          aliquid ipsum tempore iusto perferendis inventore! Dignissimos debitis eaque deleniti, repellendus porro optio
+          nostrum, quam voluptates impedit distinctio facere?</li>
+      </ul>
+      <p class="modal-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, quisquam!</p>
+      <ul class="modal-ul">
+        <ul class="modal-ul">
+          <li class="modal-li">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus voluptates,
+            laudantium natus eaque est ipsa! Quae consectetur ducimus veritatis placeat iste! Pariatur veniam rem qui
+            hic enim, blanditiis at voluptas quam provident reiciendis repellat ab molestias autem atque iure, labore
+            ducimus ut, porro quasi. Ipsa sunt debitis quisquam minima?</li>
+        </ul>
+      </ul><button class="modal-btn btn-primary policy-btn">закрыть</button>
+    </div>
+  </div>
+  <div class="modal one-modal">
+    <div class="modal-content">
+      <div class="modal-close one-close"><span></span><span></span></div>
+      <h2 class="modal-title">Оставьте заявку на подключение</h2>
+      <form class="modal-form" id="oneForm" method="POST" action="modal.php">
+        <div class="modal-form__input"><input type="text" placeholder="Ваше ФИО" name="name"></div>
+        <div class="modal-form__input"><input type="text" placeholder="Организация" name="place"></div>
+        <div class="modal-form__input"><input type="email" placeholder="E-mail" name="mail"></div><input
+          class="modal-form__submit btn-primary" type="submit">
+      </form>
+    </div>
+  </div>
+  <header class="header">
+    <div class="wrap">
+      <div class="header-content content"><a class="header-logo" href="#"> <img src="img/logo.png" alt="PROMA"></a>
+        <nav class="header-nav content"><a class="header-nav__item" href="#heroBlock">Возможности</a><a
+            class="header-nav__item" href="#work">Как работает</a><a class="header-nav__item" href="#FAQ">FAQ</a></nav>
+        <button class="btn header-btn">Войти</button>
+        <div class="header-burger"> <span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section hero">
+      <div class="wrap">
+        <div class="hero-wrap">
+          <h1 class="section-title hero-title">Прома - контроль и управление</h1><span
+            class="section-subtitle hero-subtitle">Облачный сервис позволяет легко подключить к нему приборы и получить
+            возможность контролировать и управлять ими в любое время из любого места</span>
+          <div class="hero-content content"><a class="hero-btn btn-primary" href="#demo">Демо доступ </a><a
+              class="hero-btn btn" href="#brif">Заказать звонок</a></div>
+        </div>
+        <div class="hero-block" id="heroBlock">
+          <div class="frame" id="frame">
+            <h2 class="section-title frame-title">Возможности системы </h2>
+            <ul class="frame-nav">
+              <li class="frame-nav__item current-menu-item" data-frameItem="0"><span>Контроль и управление </span>
+                <div class="statusbar"></div>
+              </li>
+              <li class="frame-nav__item" data-frameItem="1"><span>Просмотр данных</span>
+                <div class="statusbar"></div>
+              </li>
+              <li class="frame-nav__item" data-frameItem="2"><span>Отображение на карте </span>
+                <div class="statusbar"></div>
+              </li>
+              <li class="frame-nav__item" data-frameItem="3"><span>Аварийные уведомления </span>
+                <div class="statusbar"></div>
+              </li>
+            </ul>
+            <div class="frame-nav__arrow"> <img src="img/icons/arrow-icon.png" alt=""></div>
+            <div class="frame-slider">
+              <div class="frame-content content current-frame-item" id="0">
+                <div class="frame-img"> <img src="img/frame/frame-1.png" alt=""></div>
+                <div class="frame-descr">
+                  <h3 class="frame-descr__title">Контроль и управление </h3><span
+                    class="frame-descr__subtitle">Контролируйте работу приборов и управляйте ими через web-интерфейс
+                    облачного сервиса. Запустить работу или изменить уставку теперь можно из любой точки мира.</span>
+                  <div class="frame-info">
+                    <div class="frame-info__item">
+                      <div class="frame-info__img"> <img src="img/icons/access-icon.png" alt=""></div><span
+                        class="frame-info__text">Доступ из любой точки мира</span>
+                    </div>
+                    <div class="frame-info__item">
+                      <div class="frame-info__img"> <img src="img/icons/interface-icon.png" alt=""></div><span
+                        class="frame-info__text">Удобный интерфейс</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="frame-content content" id="1">
+                <div class="frame-img"> <img src="img/frame/frame-2.png" alt=""></div>
+                <div class="frame-descr">
+                  <h3 class="frame-descr__title">Просмотр данных</h3><span class="frame-descr__subtitle">Данные о
+                    результатах измерений приборов всегда доступны для просмотра в удобном виде и хранятся на сервере в
+                    виде архива.</span>
+                  <div class="frame-info">
+                    <div class="frame-info__item">
+                      <div class="frame-info__img"> <img src="img/icons/settings-icon.png" alt=""></div><span
+                        class="frame-info__text">Простые настройки</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="frame-content content" id="2">
+                <div class="frame-img"> <img src="img/frame/frame-3.png" alt=""></div>
+                <div class="frame-descr">
+                  <h3 class="frame-descr__title"> Отображение <br>на карте</h3><span
+                    class="frame-descr__subtitle">Иногда достаточно одного взгляда на карту, на которой показаны
+                    аварийные объекты, чтобы оценить ситуацию. Эта возможность сервиса очень пригодится для мониторинга
+                    распределенных объектов.</span>
+                  <div class="frame-info">
+                    <div class="frame-info__item">
+                      <div class="frame-info__img"> <img src="img/icons/map-icon.png" alt=""></div><span
+                        class="frame-info__text">Все Ваши дома на одном экране</span>
+                    </div>
+                    <div class="frame-info__item">
+                      <div class="frame-info__img"> <img src="img/icons/home-icon.png" alt=""></div><span
+                        class="frame-info__text">Удобное переключение между экранами</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="frame-content content" id="3">
+                <div class="frame-img"> <img src="img/frame/frame-4.png" alt=""></div>
+                <div class="frame-descr">
+                  <h3 class="frame-descr__title">Аварийные уведомления </h3><span
+                    class="frame-descr__subtitle">Настройте аварийные события и получайте оповещения по SMS, электронной
+                    почте и через уведомления на мобильном устройстве. Вы всегда будете знать, если что-то
+                    случилось!</span>
+                  <div class="frame-info">
+                    <div class="frame-info__item">
+                      <div class="frame-info__img"> <img src="img/icons/noti-icon.png" alt=""></div><span
+                        class="frame-info__text">Моментально узнавайте о происшествиях </span>
+                    </div>
+                    <div class="frame-info__item">
+                      <div class="frame-info__img"> <img src="img/icons/defend-icon.png" alt=""></div><span
+                        class="frame-info__text">Обезопасьте себя и своих близких</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section working" id="work">
+      <div class="wrap">
+        <h2 class="section-title working-title">Как работает система «ПРОМА»?</h2>
+        <div class="working-block content">
+          <div class="working-item">
+            <div class="working-item__img"><img src="img/icons/working-icon-1.png" alt=""></div>
+            <div class="working-item__svg"><img src="img/icons/svg-1.png" alt=""></div>
+            <div class="working-item__descr">
+              <h3 class="working-item__title">Бытовой <br>газовый кател </h3><span class="working-item__subtitle">Пульт
+                упраления котлом </span>
+            </div>
+          </div>
+          <div class="working-item">
+            <div class="working-item__img"><img src="img/icons/working-icon-2.png" alt=""></div>
+            <div class="working-item__svg"><img src="img/icons/svg-2.png" alt=""></div>
+            <div class="working-item__descr">
+              <h3 class="working-item__title"> Блок<br>диспетчеризации</h3><span class="working-item__subtitle">Передача
+                данных котла сервису средствами WiFi или 3G</span>
+            </div>
+          </div>
+          <div class="working-item">
+            <div class="working-item__img"><img src="img/icons/working-icon-3.png" alt=""></div>
+            <div class="working-item__svg"><img src="img/icons/svg-3.png" alt=""></div>
+            <div class="working-item__descr">
+              <h3 class="working-item__title"> Защищенный<br>удаленный сервер </h3><span
+                class="working-item__subtitle">Все данные хранятся в зашифрованном виде</span>
+            </div>
+          </div>
+          <div class="working-item">
+            <div class="working-item__descr">
+              <h3 class="working-item__title">Пользователь </h3><span class="working-item__subtitle">WEB сервис и
+                приложение для смартфона </span>
+            </div>
+            <div class="working-item__img"><img src="img/icons/working-icon-4.png" alt=""></div>
+          </div>
+          <div class="working-item">
+            <div class="working-item__img"><img src="img/icons/working-icon-5.png" alt=""></div>
+            <div class="working-item__descr">
+              <h3 class="working-item__title">Сервисный центр </h3><span class="working-item__subtitle">Мговенное
+                реагирование на сбои в его работе и своевременное уведомление о тех. обсуживании</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section about section_light">
+      <div class="wrap">
+        <div class="about-content content">
+          <div class="about-card">
+            <div class="about-card__img"><img src="img/icons/model-icon.png" alt=""></div>
+            <h3 class="about-card__title"> Расширенная ролевая<br>модель </h3><span class="about-card__subtitle">Система
+              подразумевает настройку возможностей для каждого пользователя.</span>
+          </div>
+          <div class="about-card">
+            <div class="about-card__img"><img src="img/icons/connect-icon.png" alt=""></div>
+            <h3 class="about-card__title"> Котел вегда<br>на связи </h3><span class="about-card__subtitle">В случае
+              неисправности система диспетчеризации высылает сообщение владельцу и сервесному центру, <br>сокращая время
+              реагирования.</span>
+          </div>
+          <div class="about-card">
+            <div class="about-card__img"><img src="img/icons/notify-icon.png" alt=""></div>
+            <h3 class="about-card__title">Уведомление о необходимости технического обслуживания </h3><span
+              class="about-card__subtitle">Система отправляет напоминание о необходимости очередного технического
+              обслуживания котла.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section faq section_light" id="FAQ">
+      <div class="wrap">
+        <h2 class="section-title faq-title">Часто задаваемые вопросы </h2>
+        <div class="faq-content">
+          <div class="faq-item">
+            <div class="faq-item__title content"> <span class="faq-item__count">1 </span><span
+                class="faq-item__name">Как работает Proma?</span><span class="faq-item__btn">Развернуть</span></div>
+            <div class="faq-item__descr"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ut
+              facere quasi qui ad dolorum aut sunt. Est, exercitationem adipisci?</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item__title content"> <span class="faq-item__count">2</span><span class="faq-item__name">Как
+                отключить сервисный центр?</span><span class="faq-item__btn">Развернуть</span></div>
+            <div class="faq-item__descr"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ut
+              facere quasi qui ad dolorum aut sunt. Est, exercitationem adipisci?</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item__title content"> <span class="faq-item__count">3</span><span
+                class="faq-item__name">Сколько стоит подключение?</span><span class="faq-item__btn">Развернуть</span>
+            </div>
+            <div class="faq-item__descr"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ut
+              facere quasi qui ad dolorum aut sunt. Est, exercitationem adipisci?</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item__title content"> <span class="faq-item__count">4 </span><span
+                class="faq-item__name">Каков порядок подключения?</span><span class="faq-item__btn">Развернуть</span>
+            </div>
+            <div class="faq-item__descr"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ut
+              facere quasi qui ad dolorum aut sunt. Est, exercitationem adipisci?</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item__title content"> <span class="faq-item__count">5</span><span
+                class="faq-item__name">Какие котлы подходят для системы?</span><span
+                class="faq-item__btn">Развернуть</span></div>
+            <div class="faq-item__descr"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ut
+              facere quasi qui ad dolorum aut sunt. Est, exercitationem adipisci?
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum iure corrupti ipsa quis ullam facere
+              neque tempora sit non ipsam impedit sunt, dicta labore eveniet, asperiores beatae dolorum culpa unde
+              provident vitae? Pariatur doloremque rem est alias veritatis, reprehenderit quae mollitia voluptate,
+              perferendis sequi, cupiditate exercitationem molestiae? Sunt ducimus a blanditiis nihil iste neque quasi
+              itaque repudiandae! Deleniti iusto quis sit ullam suscipit totam eos perferendis quo magni, culpa
+              necessitatibus pariatur eligendi ea veniam nulla nisi nesciunt minima hic voluptas mollitia, vel laborum
+              laboriosam. Sequi eius, molestias quisquam nesciunt, nihil atque, officia quod odit esse ipsum numquam
+              odio. Animi, tenetur!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section demo section_light" id="demo">
+      <div class="wrap">
+        <div class="demo-content content">
+          <div class="demo-img"><img src="img/bg/demo-bg.png" alt=""></div>
+          <div class="demo-descr">
+            <h2 class="demo-title section-title">Попробуйте <br>Демо-режим первым</h2><span
+              class="demo-subtitle section-subtitle">Вы можете использовать Прома как на компьютере, так и на смартфоне
+            </span>
+            <div class="demo-block content"> <button class="btn-primary btn toOne">Демо-доступ</button><button
+                class="btn btn-border toOne">Подключиться</button></div><span
+              class="demo-subtitle section-subtitle">Скоро в твоем смартфоне</span>
+            <div class="demo-block content"> <a href="#"><img src="img/bg/app-btn.png" alt=""></a><a href="#"><img
+                  src="img/bg/google-btn.png" alt=""></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <section class="brif section" id="brif">
+      <div class="wrap">
+        <div class="brif-content content">
+          <div class="brif-descr">
+            <h2 class="brif-title section-title"> Оставьте заявку <br>на подключение </h2><span
+              class="brif-subtitle section-subtitle">Облачный сервис «Прома: Контроль и управление» позволяет легко
+              подключить к нему приборы и получить возможность контролировать и управлять ими в любое время из любого
+              места. </span>
+          </div>
+          <form class="brif-form content" id="brifForm" method="POST" action="mail.php">
+            <div class="brif-form__input"><input type="text" placeholder="Введите Ваше имя" name="name"></div>
+            <div class="brif-form__input"><input class="input-phone" type="tel" placeholder="Введите Ваш телефон"
+                name="phone" minlength="18" maxlength="18"></div><span class="brif-form__agree">Нажимая на кнопку
+              «Отправить», я соглашаюсь с условиями <span id="policy">обработки персональных данных</span></span><input
+              class="brif-form__submit btn-primary" type="submit">
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="section info">
+      <div class="wrap">
+        <div class="info-content content">
+          <div class="info-descr">
+            <h2 class="info-title section-title">ООО "НПП ПРОМА"</h2><span class="info-subtitle section-subtitle">
+              420054, РТ, г.Казань, ул.Г.Тукая, 125<br>Тел/факс: (843) 278-28-26, 278-28-16, 278-28-46 <br>E-mail:
+              info@promav.ru</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src="jquery-2.2.4.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.5.9/slick/slick.min.js"></script>
+  <script src="jquery.validate.min.js"></script>
+  <script src="jquery.mask.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
